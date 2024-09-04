@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta de Géneros Literarios</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .question label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        .button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Encuesta de Géneros Literarios</h1>
+    <form id="quizForm">
+        <div class="question">
+            <p>1. ¿Qué tipo de conflicto te parece más interesante?</p>
+            <label><input type="radio" name="q1" value="misterio"> a) Un enigma que requiere resolución.</label>
+            <label><input type="radio" name="q1" value="fantasia"> b) Una lucha épica contra adversidades.</label>
+            <label><input type="radio" name="q1" value="romantico"> c) Un dilema emocional o relacional.</label>
+            <label><input type="radio" name="q1" value="ciencia"> d) Un desafío que pone a prueba las creencias y valores.</label>
+        </div>
+        <div class="question">
+            <p>2. ¿Qué tipo de entorno te atrae más en una historia?</p>
+            <label><input type="radio" name="q2" value="misterio"> a) Un lugar con secretos escondidos y sorpresas.</label>
+            <label><input type="radio" name="q2" value="fantasia"> b) Un mundo vibrante lleno de magia o tecnología avanzada.</label>
+            <label><input type="radio" name="q2" value="romantico"> c) Un contexto cotidiano donde se exploran las relaciones humanas.</label>
+            <label><input type="radio" name="q2" value="ciencia"> d) Un escenario futurista o alternativo con problemas complejos.</label>
+        </div>
+        <div class="question">
+            <p>3. ¿Cuál es tu forma preferida de resolver un problema en una historia?</p>
+            <label><input type="radio" name="q3" value="misterio"> a) A través de una serie de pistas y descubrimientos.</label>
+            <label><input type="radio" name="q3" value="fantasia"> b) Mediante acciones decisivas y momentos de gran tensión.</label>
+            <label><input type="radio" name="q3" value="romantico"> c) Con una reflexión profunda y resolución de conflictos personales.</label>
+            <label><input type="radio" name="q3" value="ciencia"> d) Explorando ideas innovadoras y desafiantes sobre el futuro.</label>
+        </div>
+        <div class="question">
+            <p>4. ¿Cómo te gusta que se desarrollen los personajes?</p>
+            <label><input type="radio" name="q4" value="misterio"> a) A través de su habilidad para desentrañar misterios.</label>
+            <label><input type="radio" name="q4" value="fantasia"> b) A través de sus hazañas y desafíos en un mundo fascinante.</label>
+            <label><input type="radio" name="q4" value="romantico"> c) A través de sus relaciones y experiencias emocionales.</label>
+            <label><input type="radio" name="q4" value="ciencia"> d) A través de su adaptación a un mundo diferente y complejo.</label>
+        </div>
+        <div class="question">
+            <p>5. ¿Qué tipo de ritmo prefieres en una historia?</p>
+            <label><input type="radio" name="q5" value="misterio"> a) Un ritmo rápido con giros inesperados.</label>
+            <label><input type="radio" name="q5" value="fantasia"> b) Un ritmo dinámico con mucha acción y aventura.</label>
+            <label><input type="radio" name="q5" value="romantico"> c) Un ritmo más pausado con énfasis en la evolución emocional.</label>
+            <label><input type="radio" name="q5" value="ciencia"> d) Un ritmo reflexivo con profundidad en el desarrollo de ideas.</label>
+        </div>
+        <div class="question">
+            <p>6. ¿Qué elemento te resulta más atractivo en un libro?</p>
+            <label><input type="radio" name="q6" value="misterio"> a) Una serie de misterios por resolver.</label>
+            <label><input type="radio" name="q6" value="fantasia"> b) Un universo rico en detalles y posibilidades.</label>
+            <label><input type="radio" name="q6" value="romantico"> c) Una exploración íntima de las relaciones humanas.</label>
+            <label><input type="radio" name="q6" value="ciencia"> d) Una visión provocadora del futuro o de realidades alternativas.</label>
+        </div>
+        <div class="question">
+            <p>7. ¿Qué tipo de final te deja más satisfecho?</p>
+            <label><input type="radio" name="q7" value="misterio"> a) Un desenlace que resuelve todos los misterios y preguntas.</label>
+            <label><input type="radio" name="q7" value="fantasia"> b) Un final grandioso con un claro sentido de victoria o logro.</label>
+            <label><input type="radio" name="q7" value="romantico"> c) Un final que cierra de manera emotiva y significativa.</label>
+            <label><input type="radio" name="q7" value="ciencia"> d) Un final abierto que invita a la reflexión y la interpretación.</label>
+        </div>
+        <div class="question">
+            <p>8. ¿Cómo prefieres que se trate el diálogo en una historia?</p>
+            <label><input type="radio" name="q8" value="misterio"> a) Como una herramienta para revelar secretos y avanzar en la trama.</label>
+            <label><input type="radio" name="q8" value="fantasia"> b) Como una forma de intensificar la acción y la emoción.</label>
+            <label><input type="radio" name="q8" value="romantico"> c) Como una manera de explorar los matices de las relaciones personales.</label>
+            <label><input type="radio" name="q8" value="ciencia"> d) Como una forma de discutir ideas y conceptos innovadores.</label>
+        </div>
+        <div class="question">
+            <p>9. ¿Qué tipo de narrativa disfrutas más?</p>
+            <label><input type="radio" name="q9" value="misterio"> a) Una narrativa que desvela detalles ocultos y sorpresas.</label>
+            <label><input type="radio" name="q9" value="fantasia"> b) Una narrativa épica con mundos y personajes extraordinarios.</label>
+            <label><input type="radio" name="q9" value="romantico"> c) Una narrativa centrada en la experiencia humana y las relaciones.</label>
+            <label><input type="radio" name="q9" value="ciencia"> d) Una narrativa que cuestiona y explora el futuro y sus posibilidades.</label>
+        </div>
+        <div class="question">
+            <p>10. ¿Qué aspecto de una trama te resulta más envolvente?</p>
+            <label><input type="radio" name="q10" value="misterio"> a) El proceso de resolver un enigma o descubrir una verdad oculta.</label>
+            <label><input type="radio" name="q10" value="fantasia"> b) La emocionante travesía de personajes en un entorno fantástico.</label>
+            <label><input type="radio" name="q10" value="romantico"> c) El desarrollo y resolución de conflictos personales y románticos.</label>
+            <label><input type="radio" name="q10" value="ciencia"> d) La exploración de conceptos futuristas y sus implicaciones.</label>
+        </div>
+        <button type="button" class="button" onclick="calculateResult()">Enviar</button>
+    </form>
+
+    <div id="result" class="result"></div>
+
+    <script>
+        function calculateResult() {
+            const answers = document.querySelectorAll('input[type="radio"]:checked');
+            const counts = {
+                misterio: 0,
+                fantasia: 0,
+                romantico: 0,
+                ciencia: 0
+            };
+
+            answers.forEach(answer => {
+                counts[answer.value]++;
+            });
+
+            const maxGenre = Object.keys(counts).reduce((a, b) => counts[a] > counts[b] ? a : b);
+
+            let genreName;
+            switch(maxGenre) {
+                case 'misterio':
+                    genreName = 'Misterio/Thriller';
+                    break;
+                case 'fantasia':
+                    genreName = 'Fantasía/Aventura';
+                    break;
+                case 'romantico':
+                    genreName = 'Romántico/Drama';
+                    break;
+                case 'ciencia':
+                    genreName = 'Ciencia Ficción/Distopía';
+                    break;
+            }
+
+            document.getElementById('result').textContent = `Tu género literario preferido es: ${genreName}`;
+        }
+    </script>
+</body>
+</html>
